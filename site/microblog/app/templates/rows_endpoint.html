@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <h1>Hi, {{ user.nickname }}!</h1>
+    
+    {% for row in rows %}
+    
+    <div>
+    	<p>{{ row.invention }} was invented in: <b>{{ row.time_period }}</b></p>
+    	<img src="https://i.ytimg.com/vi/mZw3UBBp5KQ/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDb3l5VqwrQnkpJkwB-8yMMzG7y-g" alt="obama" height="42" width="42"></img>
+    </div>
+    
+    {% endfor %}
+{% endblock %}
